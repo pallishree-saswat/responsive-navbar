@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/"> The mangoGirl </a>
+        <div class="list" id="menu-list">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+        <div class="icon" id="icon">
+            <h4><i class="fa fa-bars"></i></h4>
+        </div>
+    </nav>
+
+    <script>
+const btn = document.getElementById("icon")
+const list = document.getElementById("menu-list")
+
+
+btn.addEventListener('click',click)
+
+function click(){
+list.classList.toggle('show')
+              
+ }
+    </script>
+</body>
+</html>
